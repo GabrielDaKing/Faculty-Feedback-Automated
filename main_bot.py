@@ -8,6 +8,7 @@ import os
 username = "" #Enter your SAP id
 password = "" #Enter your password
 score = -1 #Enter a score to give from 1 to 7
+number_college_subjects = 4 #excluding IDC
 
 def start_browser():
 
@@ -39,7 +40,7 @@ def login():
 
 		for i in range(15):
 
-			for j in range(8):
+			for j in range(number_college_subjects*2):
 
 				select = Select(driver.find_element_by_id('answer'+str(i)+str(j)))
 				select.select_by_index(score-1)
