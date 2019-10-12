@@ -42,7 +42,7 @@ def login():
 			for j in range(8):
 
 				select = Select(driver.find_element_by_id('answer'+str(i)+str(j)))
-				select.select_by_index(5)
+				select.select_by_index(score-1)
 
 			driver.execute_script("window.scrollTo(0, document.body.scrollHeight/2);")
 			print('yes')
@@ -53,7 +53,6 @@ def login():
 			print('doubleyes')
 			# driver.execute_script("window.scrollTo(0, 0);")
 			sleep(1)
-
 
 		finish = driver.find_element_by_id('studentFeedbackCommentForm')
 
