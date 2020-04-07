@@ -1,5 +1,7 @@
 # Faculty-Feedback-Automated
 
+This is a simple web automation script to fill in the faculty feedback forms on the MPSTME portal.
+
 ## Setup
 
 1. Install the selenium package for python using 'pip install selenium'
